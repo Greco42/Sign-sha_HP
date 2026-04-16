@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html dir="ltr" lang="ja">
 <head>
@@ -58,3 +59,330 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>サイン社</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/loading.js"></script>
+		<!--<script src="js/scroll.js"></script>-->
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<script>
+		new WOW().init();
+		emailjs.init('EVfhjlWWjG_smFK_r');
+	</script>
+	
+	<script type="text/javascript">
+        window.addEventListener('load', function() {
+			console.log('load emailjs function');
+			var formElement = document.getElementById('contact-form');
+            formElement.addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+				console.log('push send button')
+                emailjs.sendForm('service_ns2zovl', 'template_na1ye2v', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+						formElement.reset();
+						alert('送信完了しました。ご連絡ありがとうございます、内容確認でき次第折り返し連絡させていただきます。');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+						alert('送信失敗いたしました。お手数ですが再度入力内容をご確認のほどお願い申し上げます。');
+                    });
+            });
+        });
+    </script>
+	
+	<body class="landing">
+		
+		<!-- loading-->
+			<div id="loading">
+				<div id="loading_logo">
+					loading...
+				</div>
+			</div>
+
+		<!-- Header -->
+			<header id="header" class="alt animate__animated animate__fadeInDown animate__delay-2s">
+				<h1><strong><a href="index.html">Sign-sha</a></strong></h1>
+				<nav id="nav">
+					<ul id="g-nav">
+						<li><a href="#one">Home</a></li>
+						<li><a href="#two">PRODUCTS</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>サイン社</h2>
+				<p>１枚の看板であなたのビジネスを最大化</p>
+				<!--
+				<ul class="actions">
+					<li><a href="#" class="button special big">Get Started</a></li>
+				</ul>
+				-->
+			</section>
+
+			<!-- One -->
+				<section id="one" class="wrapper style1">
+					<div class="container 75% wow">
+						<div class="row 200%">
+							<div class="6u 12u$(medium) animate__animated animate__fadeInLeft animate__delay-2s">
+								<header class="major">
+									<h2>OUR MISSION&nbsp; &nbsp;&nbsp;</h2>
+								  <hr size="10">
+									<p>デザインで"あなたと地域"を豊かに</p>
+								</header>
+							</div>
+							<div class="6u$ 12u$(medium) animate__animated animate__fadeInRight animate__delay-3s">
+							  <p><b>１枚の看板であなたのビジネスを最大化</b></p>
+							  	<p>インターネットが普及し、誰もがスマートフォンを手にする時代になりました。</p>
+							  <p>それでも街を見渡せば無数の看板が目につくのはそれだけ看板のポテンシャルを示していることを表しています。</p>
+								<p>サイン社ではあなたの目的に合った最適な看板を豊富なアイディアとスキルで形にします。</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Two -->
+				<section id="two" class="wrapper style2 special">
+					<div class="container">
+						<header class="major wow animate__animated animate__fadeInUp animate__delay-0.5s">
+							<h2>PRODUCTS</h2>
+							<p>施工実績</p>
+						</header>
+						<div class="row 150%">
+							<div class="4u 12u$(xsmall) wow animate__animated animate__flipInY">
+								<div class="image fit captioned">
+									<img src="images/test_pic_01.png" alt="" />
+									<h3>test</h3>
+								</div>
+							</div>
+							<div class="4u 12u$(xsmall) wow animate__animated animate__flipInY">
+								<div class="image fit captioned">
+									<img src="images/test_pic_02.png" alt="" />
+									<h3>test2</h3>
+								</div>
+							</div>
+							
+							<div class="4u 12u$(xsmall) wow animate__animated animate__flipInY">
+								<div class="image fit captioned">
+									<img src="images/test_pic_03.png" alt="" />
+									<h3>test3</h3>
+								</div>
+							</div>					
+						</div>
+						<ul class="actions">
+							<li><a href="#" class="button special big">read more</a></li>
+						<!--
+							<li><a href="#" class="button big">Sed vulputate</a></li>
+						-->
+						</ul>
+					</div>
+				</section>
+
+			<!-- about -->
+				<section id="about" class="wrapper style1">
+					<div class="container">
+						<header class="major special wow animate__animated animate__fadeInUp animate__delay-0.5s">
+							<h2>ABOUT US</h2>
+							<p>会社概要</p>
+						</header>
+						<ul class="about-list">
+							<li>
+								<dl>
+									<dt>会社名</dt>
+									<dd>サイン社</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>設立</dt>
+									<dd>19xx年x月x日</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>資本金</dt>
+									<dd>xxxx万円</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>代表</dt>
+									<dd>大村 正樹</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>所在地</dt>
+									<dd>〒433-8103 静岡県浜松市北区豊岡町351-12</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>電話</dt>
+									<dd>053-438-7426</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>主な取引先</dt>
+									<dd>
+										"AAA"
+										<br>
+										"BBB"
+										<br>
+										"CCC"
+									</dd>
+								</dl>
+							</li>
+						</ul>
+						<!--
+						<div class="feature-grid">
+							<div class="feature">
+								<div class="image rounded"><img src="images/pic04.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>サイン社&nbsp;</h4>
+										<p>社名</p>
+									</header>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.</p>
+							  </div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="images/pic05.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Recusandae nemo</h4>
+										<p>Ratione maiores a, commodi</p>
+									</header>
+									<p>Animi mollitia optio culpa expedita. Dolorem alias minima culpa repellat. Dolores, fuga maiores ut obcaecati blanditiis, at aperiam doloremque.</p>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="images/pic06.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Laudantium fugit</h4>
+										<p>Possimus ex reprehenderit eaque</p>
+									</header>
+									<p>Maiores iusto inventore fugit architecto est iste expedita commodi sed, quasi feugiat nam neque mollitia vitae omnis, ea natus facere.</p>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="images/pic07.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Porro aliquam</h4>
+										<p>Quaerat, excepturi eveniet laboriosam</p>
+									</header>
+									<p>Vitae earum unde, autem labore voluptas ex, iste dolorum inventore natus consequatur iure similique obcaecati aut corporis hic in! Porro sed.</p>
+								</div>
+							</div>	
+						</div>
+						-->
+					</div>
+				</section>
+
+			<!-- Four -->
+				<section id="contact" class="wrapper style3 special">
+					<div class="container">
+						<header class="major wow animate__animated animate__fadeInUp animate__delay-0.5s">
+							<h2>CONTACT</h2>
+							<p>ご依頼・お問い合わせ</p>
+						</header>
+						<!--<form method="post" action="#" id="contact-form"> -->
+						<form id="contact-form">
+							<ul class="form-list">
+								<input type="hidden" name="contact_number">
+								<li>
+									<dl>
+										<dt><label for="division">会社名/部署名</label></dt>
+										<dd><input type="text" name="user_division" size="60" value></dd>
+									</dl>
+								</li>
+								
+								<li>
+									<dl>
+										<dt><label for="name">ご担当者名</label></dt>
+										<dd><input type="text" name="user_name" size="60" value></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><label for="email">メールアドレス</label></dt>
+										<dd><input type="email" name="user_email" size="60" value></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><label for="tel">電話番号</label></dt>
+										<dd><input type="text" name="user_tel" size="60" value></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><label for="msg">お問い合わせ内容</label></dt>
+										<dd><textarea name="user_msg" cols="50" rows="6"></textarea></dd>
+									</dl>
+								</li>
+								
+								<ul class="actions">
+									<!--<li><a href="./send_mail.html" class="button special big">送信</a></li> -->
+									<li><input type="submit" class="special" value="送信"/></li>
+								</ul>
+							</ul>
+						</form>						
+						
+
+					</div>
+				</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-facebook"></a></li>
+						<li><a href="#" class="icon fa-twitter"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Sign-sha</li>
+						<!--
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+						-->
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>
+>>>>>>> 05f8aef (Feature: Add signboard area calculator tool)
